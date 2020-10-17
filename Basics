@@ -1,0 +1,79 @@
+VPC- Virtual Private Cloud
+CIDR- Classless Inter Domain Routing
+
+IP Address Structure
+ 
+IPV4 address consists of 32 bit where every 8 bits/octet are separated with . from each other.
+
+Each Octet ranges from 0-255.
+
+Class A
+
+192.0.0.0/8 where first 8 bits are reserved for network.So number of host are 2^24(32-8=24)=16,777,216.
+
+Class B
+
+192.168.0.0/16 where first two 8 bits are reserved for network.So number of host are 2^16(32-16=16)=65536.
+
+Class C
+
+192.168.168.0/24 where first three 8 bits are reserved for network.So number of host are 2^8(32-24=8)=256.
+
+
+Standard Private IPV4 Address Range:
+
+10.0.0.0 - 10.255.255.255 (/8 prefix)
+
+172.16.0.0 - 172.31.255.255 (/12 prefix)
+
+192.168.0.0 - 192.168.255.255 (/16 prefix)
+
+
+Example 192.168.0.0/16 (N/W Prefix)
+
+Formula:
+
+Total Available Host Bits= Total Bits - N/W Prefix
+
+Total Available IP's = 2^Total Available Host Bits
+
+Total Available Host Bits = 32-16 = 16
+
+Total Available IP's = 2^16 = 65536
+
+
+Lets check in detail now
+
+192.168.0.0/16 = 32-16 = 16 = 2^16 = 65536
+
+192.168.0.0/17 = 32-17 = 15 = 2^15 = 32,768
+
+192.168.0.0/18 = 32-18 = 14 = 2^14 = 16,384
+
+192.168.0.0/19 = 32-19 = 13 = 2^13 = 8,192
+
+192.168.0.0/20 = 32-20 = 12 = 2^12 = 4,096
+
+192.168.0.0/21 = 32-21 = 11 = 2^11 = 2,048
+
+192.168.0.0/22 = 32-22 = 10 = 2^10 = 1,024
+
+192.168.0.0/23 = 32-23 = 09 = 2^09 = 512
+
+192.168.0.0/24 = 32-24 = 08 = 2^08 = 256
+
+192.168.0.0/25 = 32-25 = 07 = 2^07 = 128
+
+192.168.0.0/26 = 32-26 = 06 = 2^06 = 64
+
+192.168.0.0/27 = 32-27 = 05 = 2^05 = 32
+
+192.168.0.0/28 = 32-28 = 04 = 2^04 = 16
+
+192.168.0.0/29 = 32-29 = 03 = 2^03 = 08
+
+192.168.0.0/30 = 32-30 = 02 = 2^2 = 04
+
+192.168.0.0/31 = 32-31 = 1 = 2^1 = 02
+
+192.168.0.0/32 = 32-32 = 0 = 2^0 = 00
